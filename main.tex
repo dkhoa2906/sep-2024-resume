@@ -1,0 +1,132 @@
+%-------------------------------------
+% Resum in LaTeX (XeLaTeX)
+% Author:  HF Yuan
+% Project: https://github.com/xyz-yuanhf/yuan-resume
+% Base on: https://github.com/mattyHerzig/mattys_resume
+%          http://www.jianxu.net/en/
+% License: MIT
+%------------------------------------
+
+\documentclass[a4paper, 10pt]{article}
+\usepackage{myresume}  % Style package
+\usepackage{graphicx}  % For including images
+\usepackage{ragged2e}  % For justified text
+\usepackage{fancyhdr}  % For better footer
+\pagestyle{fancy}
+
+% Footer settings
+\pagestyle{fancy}
+\fancyhf{} % Clear existing header/footer
+\fancyfoot[L]{September 15, 2024} % Left
+\fancyfoot[C]{} % Center
+\fancyfoot[R]{Page: 1/1} % Right
+\renewcommand{\headrulewidth}{0pt} % No line in header
+\renewcommand{\footrulewidth}{0pt} % Line in footer
+
+% --------------------  START  --------------------
+\begin{document}
+
+% -------------------- HEADING --------------------
+\begin{flushright}
+  \setstretch{0.1}
+  \item {\Calluna (+84) 0792-252-902}  % Phone number
+  \item {\Calluna khoacao.dev@gmail.com}  % E-mail address
+  \item {\Calluna Ho Chi Minh City, Vietnam}  % Address
+\end{flushright}\vspace{-60pt}
+
+\begin{flushleft}
+  %\setstretch{0.1}
+  {\Calluna \fontsize{30pt}{0pt}\selectfont \textsc{KHOA DANG CAO}} \\
+  \vspace{5pt}
+  {\Calluna \fontsize{10pt}{30pt}\selectfont \textsc{Back-end Developer} \hspace{5pt} $\cdot$ \hspace{5pt} \textsc{Researcher} \hspace{5pt} $\cdot$ \hspace{5pt} \textsc{Peer Tutor}}
+
+  \noindent
+    \begin{justify}
+    \setstretch{1.1}
+    \textit{``As a passionate 19-year-old Computer Science student specializing in web development, software development, and AI engineering, I am actively involved in innovative projects such as digitization systems and machine learning models. My objective is to leverage my technical skills and innovative ideas to make a significant impact in the tech industry while seeking advanced opportunities abroad. Supported by a strong passion for research and a proactive approach to problem-solving, I am eager for the opportunities ahead.''}
+    \end{justify}
+    \noindent\rule{\textwidth}{0.3pt}
+\end{flushleft}
+
+% -------------------- EDUCATION --------------------
+\sectionBlock{
+\section{Education}
+}{
+\eduHeading
+  {Birmingham City University}{Birmingham, UK}
+  {Bachelor of Science with Honours in Computer Science}{2023 - 2026 \footnotesize{\textit{(expected)}}}
+  {International Joint Program with University of Information Technology, VNU-HCM}
+}
+
+% -------------------- PROJECTS --------------------
+\sectionBlock{
+\section{Projects}
+}{
+\projHeading
+{\textbf{Automated Digitization System for Vietnam Birth Certificates}}
+{Database and Web Application Development Course Final Project} {2024.07 - 2024.08}
+
+\projHeading
+{\textbf{Spam Message Detector Machine Learning Model}}
+{Youth Digital Citizen Challenge 2024: Digital Security Hackathon} {2024.04 - 2024.04}
+
+\projHeading
+{\textbf{Notecommit: A Collaborative Note-Taking Application}}
+{Innovation Project Course Final Project} {2024.02 - 2024.05}
+
+\projHeading
+{\textbf{May Tinh Cu - Tri Thuc Moi (Old Computers - New Insights)}}
+{Repurposes used hardware to create new educational opportunities} {2024.01 - Ongoing}
+
+\projHeading
+{\textbf{Servi: A Platform Connecting Freelancers and Clients}}
+{The 2023 UIT Creative Startup Ideas Hackathon} {2023.12 - 2023.12}
+
+\projHeading
+{\textbf{17.Blog: A New Social Media with Blog-Oriented}}
+{Website Design and Development Course Final Project} {2023.10 - 2024.01}
+}
+
+% -------------------- INTERNSHIPS --------------------
+\sectionBlock{
+\section{Internships}
+}{
+\internHeading
+  {NHAT NGUYEN Tech Co., Ltd (DigiSER)}{HCMC, Vietnam}{2024.04 - 2024.07}
+  {A digitalisation provider offering data digitization, image processing, and data labelling.}
+\itemListStart
+  \myItem{Worked as a Front-end and Back-end Web Developer}
+  \myItem{Build and develop web applications for digitising services.}
+  \myItem{Research and analyse types of Vietnam civil status documents.}
+  \myItem{Technologies used: Django, ReactJS, Tailwind CSS}
+\itemListEnd
+}
+
+% -------------------- AWARDS & HONORS --------------------
+\sectionBlock{
+\section{Awards\\and\\Honors}
+}{
+\awardListStart
+\justifying
+\item \emph{Certificate of Appreciation}, Binh Thuan Provincial Youth Union \hfill 2024.07
+\item \emph{Merit-Based Scholarship}, University of Information Technology \hfill 2024.04
+\item \emph{Most Favourite Startup Project}, UIT Creative Startup Ideas Hackathon \hfill 2023.12
+\item \emph{Second Prize}, UIT Excellent Programs Team Building Competition \hfill 2023.10
+\awardListEnd
+}
+
+% -------------------- SKILLS --------------------
+\sectionBlock{
+\section{Skills}
+}{
+\skillListStart
+\justifying
+\item \emph{Languages}: Vietnamese (native), English (IELTS Score of 6.0).
+\item \emph{Programming}: Python, C++, Java, JavaScript, Bash.
+\item \emph{Technologies}: Flask, Django, FastAPI, ReactJS, PostgreSQL.
+\item \emph{Tools}: Github, Adobe Illustrator, Adobe Photoshop, Adobe Premiere Pro.
+\item \emph{Others}: Designing, Information Lookup, AI Prompting, Problem Solving, Leadership.
+\skillListEnd
+}
+
+\end{document}
