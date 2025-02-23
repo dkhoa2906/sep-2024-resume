@@ -12,14 +12,16 @@
 \usepackage{graphicx}  % For including images
 \usepackage{ragged2e}  % For justified text
 \usepackage{fancyhdr}  % For better footer
+\usepackage{hyperref}
 \pagestyle{fancy}
+
 
 % Footer settings
 \pagestyle{fancy}
 \fancyhf{} % Clear existing header/footer
-\fancyfoot[L]{September 15, 2024} % Left
+\fancyfoot[L]{February 23, 2025} % Left
 \fancyfoot[C]{} % Center
-\fancyfoot[R]{Page: 1/1} % Right
+\fancyfoot[R]{Page: 1/2} % Right
 \renewcommand{\headrulewidth}{0pt} % No line in header
 \renewcommand{\footrulewidth}{0pt} % Line in footer
 
@@ -35,21 +37,22 @@
 \end{flushright}\vspace{-60pt}
 
 \begin{flushleft}
-  %\setstretch{0.1}
   {\Calluna \fontsize{30pt}{0pt}\selectfont \textsc{KHOA DANG CAO}} \\
   \vspace{5pt}
-  {\Calluna \fontsize{10pt}{30pt}\selectfont \textsc{Back-end Developer} \hspace{5pt} $\cdot$ \hspace{5pt} \textsc{Researcher} \hspace{5pt} $\cdot$ \hspace{5pt} \textsc{Peer Tutor}}
+  {\Calluna \fontsize{10pt}{30pt}\selectfont \textsc{Back-end Developer} \hspace{5pt} $\cdot$ \hspace{5pt} \textsc{Researcher} \hspace{5pt}}
 
+\vspace{10pt}
   \noindent
     \begin{justify}
     \setstretch{1.1}
-    \textit{``As a passionate 19-year-old Computer Science student specializing in web development, software development, and AI engineering, I am actively involved in innovative projects such as digitization systems and machine learning models. My objective is to leverage my technical skills and innovative ideas to make a significant impact in the tech industry while seeking advanced opportunities abroad. Supported by a strong passion for research and a proactive approach to problem-solving, I am eager for the opportunities ahead.''}
+    \textit{Hi, Khoa here! I’m a back-end developer and researcher, currently in my internship phase and looking forward to moving into a full-time role. I have a strong enthusiasm for R\&D, sharing ideas and finding smart solutions. I enjoy teamwork and always look for ways to grow. My long-term goal is to pursue higher education abroad.}
     \end{justify}
     \noindent\rule{\textwidth}{0.3pt}
 \end{flushleft}
 
 % -------------------- EDUCATION --------------------
 \sectionBlock{
+\vspace{-9.9pt}
 \section{Education}
 }{
 \eduHeading
@@ -58,75 +61,195 @@
   {International Joint Program with University of Information Technology, VNU-HCM}
 }
 
-% -------------------- PROJECTS --------------------
+% -------------------- EXPERIENCE --------------------
+
 \sectionBlock{
-\section{Projects}
+\vspace{-9.9pt}
+  \section{Experience}
 }{
-\projHeading
-{\textbf{Automated Digitization System for Vietnam Birth Certificates}}
-{Database and Web Application Development Course Final Project} {2024.07 - 2024.08}
+  \internHeading
+    {MindX Technology School}{HCMC, Vietnam}{2024.12 - present}
+    {Mentor / Teaching Assistant for K12 Robotics and Coding Programs}
+    \vspace{-8pt}
 
-\projHeading
-{\textbf{Spam Message Detector Machine Learning Model}}
-{Youth Digital Citizen Challenge 2024: Digital Security Hackathon} {2024.04 - 2024.04}
-
-\projHeading
-{\textbf{Notecommit: A Collaborative Note-Taking Application}}
-{Innovation Project Course Final Project} {2024.02 - 2024.05}
-
-\projHeading
-{\textbf{May Tinh Cu - Tri Thuc Moi (Old Computers - New Insights)}}
-{Repurposes used hardware to create new educational opportunities} {2024.01 - Ongoing}
-
-\projHeading
-{\textbf{Servi: A Platform Connecting Freelancers and Clients}}
-{The 2023 UIT Creative Startup Ideas Hackathon} {2023.12 - 2023.12}
-
-\projHeading
-{\textbf{17.Blog: A New Social Media with Blog-Oriented}}
-{Website Design and Development Course Final Project} {2023.10 - 2024.01}
-}
-
-% -------------------- INTERNSHIPS --------------------
-\sectionBlock{
-\section{Internships}
-}{
-\internHeading
-  {NHAT NGUYEN Tech Co., Ltd (DigiSER)}{HCMC, Vietnam}{2024.04 - 2024.07}
-  {A digitalisation provider offering data digitization, image processing, and data labelling.}
 \itemListStart
-  \myItem{Worked as a Front-end and Back-end Web Developer}
-  \myItem{Build and develop web applications for digitising services.}
-  \myItem{Research and analyse types of Vietnam civil status documents.}
-  \myItem{Technologies used: Django, ReactJS, Tailwind CSS}
+  \myItem{Led trial classes to inspire students' interest and uncover their strengths.}
+  \myItem{Connected with parents to suggest learning paths based on students' abilities.}
+  \myItem{Observed and assisted students during lessons.}
+\itemListEnd
+
+  \vspace{5pt}
+
+\internHeading
+  {DigiSER Digital Services Company}{HCMC, Vietnam}{2024.04 - 2024.07}
+  {Full-stack Developer (React - Django)} 
+  \vspace{-8pt}
+  
+\itemListStart
+  \myItem{Researched and analyzed various types of Vietnam civil status documents.}
+  \myItem{Developed a data entry website for digitizing civil status documents.}
+  \myItem{Implemented field validation and standardization for accurate data input.}
 \itemListEnd
 }
 
+% -------------------- PROJECTS --------------------
+\sectionBlock{
+\vspace{-9.9pt}
+\section{Highlighted projects}
+}{
+
+\projHeading
+{\textbf{Performance Evaluation of Machine Learning Algorithms for an \newline Intrusion Detection System (IDS) using the CICIDS2017 Dataset}}  
+{Role: Project Lead, ML Developer, Main Author} {2024.12 - 2025.01}  
+\itemListStart
+  \myItem{\textbf{Tech stack:} Python, Jupyter Notebook, LaTeX.}
+  \myItem{Implemented Intrusion Detection System using Random Forest (RF), Retrained RF,  KNN and XGBoost for detecting DDoS, DoS, Botnet, PortScan and Web Attacks.}  
+  \myItem{Evaluated models based on F1-score, training/testing time and their effectiveness  against different attack types.}
+  \myItem{Authored a detailed report documenting methodology, experimental results and performance analysis of IDS models. \href{https://github.com/dkhoa2906/CSBU111-IDS-with-ML/blob/30d99842cc2a31b1eb246d76ef7634f07e4d6a62/ML-Based_IDS_CICIDS2017.pdf}{\textbf{Read the report here}.}}
+
+
+\itemListEnd  
+
+\vspace{5pt}
+
+\projHeading
+{\textbf{KhaBanh.life: Personalized AI Hairstyle Try-On Website}}
+{Role: Project Lead, Backend Developer} {2024.12 - 2025.01}  
+\itemListStart  
+  \myItem{\textbf{Tech stack:} Spring Boot, FastAPI, PostgreSQL, FastHairGAN, Uvicorn, Docker}  
+\myItem{Developed the user service backend using Spring Boot, managing authentication, account operations, function requests, balance tracking, etc.}
+
+\myItem{Resolved deployment issues and integrated FastHairGAN with FastAPI, allowing users to apply hairstyles and hair colors to their own photos.}  
+
+ 
+\itemListEnd  
+
+
+\vspace{5pt}
+  
+\projHeading
+{\textbf{Automated Digitization System for Vietnam Birth Certificates}}  
+{Role: Project Lead, Backend Developer} {2024.07 - 2024.08}  
+\itemListStart  
+  \myItem{\textbf{Tech stack:} Flask, PostgreSQL, VietOCR, Uvicorn}  
+\myItem{Developed a model for extracting and digitizing information from Vietnamese birth certificates using VietOCR, enhancing accuracy through document field validation.}  
+\myItem{Built the backend with Flask, managing authentication, user accounts, document processing workflows; designed an API for uploading scanned birth certificates and retrieving structured data.}  
+
+\itemListEnd  
+
+
+% \projHeading
+% {\textbf{Spam Message Detector Machine Learning Model}}
+% {Youth Digital Citizen Challenge 2024: Digital Security Hackathon} {2024.04 - 2024.04}
+%  \itemListStart
+
+%   \itemListEnd
+
+}
+
+
+
+\newpage % Move remaining sections to page 2
+\fancyfoot[R]{Page: 2/2} % Update page number
+
+
+% -------------------- EXTRACURRICULAR ACTIVITIES --------------------
+\sectionBlock{
+\section{Activities}
+}{
+\vspace{-0.25pt}
+\projHeading
+{Google Developer Group on Campus - UIT}
+{Development team member, responsible for organizing and hosting tech-sharing sessions. Helped in some technology posts on the official fanpage of Google Developer Group on Campus - UIT, helping to share knowledge with the community.} 
+{2024.11 - present}
+
+
+\vspace{13pt}
+
+\projHeading
+{May Tinh Cu - Tri Thuc Moi (Old Computers - New Insights)}
+{A volunteer team since 2008 that repurposes and repairs used computer hardware to create new educational opportunities. Our slogan is "17 years of bringing knowledge to every corner."} {2024.01 - present}
+
+
+\vspace{13pt}
+
+\projHeading
+{Youth Union}
+{Actively participated in Youth Union and social activities since high school. Served as the school’s Youth Union Secretary for the 2021-2022 term. Currently involved with the Faculty of Computer Science Youth Union at UIT, though less actively.} {2020.09 - present}
+
+
+\vspace{13pt}
+
+\projHeading
+{Nguyen Huu Huan High School IT Club}
+{Former advisory member, organizing seminars, mentorship sessions and career orientation programs. Provided knowledge-sharing sessions to support students in their technical growth. Planned and authored educational content for 'Weekly Python,' a media program aimed at introducing high school students to Python programming.} {2023.08 - 2024.06}
+
+}
+
+% -------------------- TECH-SHARING SESSIONS --------------------
+
+\sectionBlock{
+\vspace{-9pt}
+\section{Tech-Sharing Sessions}
+}{
+\sharHeading
+{UIT Google Developer Group on Campus - Git/GitHub Sharing}  
+{Prepared learning materials and delivered a sharing session for UIT Google Developer Group members on Git - GitHub fundamentals, workflow best practices and collaboration via branching and pull requests.}  
+{2024.11}
+
+\vspace{13pt}
+
+\sharHeading
+{Trainee Program 2024 - Developer Starter Pack Sharing}  
+{Developed session materials and exercises. Presented the Developer Starter Pack session on Markdown and Git/GitHub for Trainee Program 2024, organized by the UIT Computer Science Faculty Youth Union, to equip university freshmen with essential skills.}  
+{2024.11}
+
+
+
+
+
+\vspace{13pt}
+
+\sharHeading
+{Nguyen Huu Huan High School IT Club - Career Orientation Session}
+{Participated in a career orientation session hosted by the NHH IT Club, sharing insights and experiences to help students navigate their university choices and career paths in IT field.} {2023.11}
+
+}
+
+
+
 % -------------------- AWARDS & HONORS --------------------
 \sectionBlock{
-\section{Awards\\and\\Honors}
+\vspace{-9.5pt}
+\section{Awards \& Honors}
 }{
 \awardListStart
 \justifying
+\item \emph{Third Prize in Information Technology Track}, ISE Spark of Ideas Fall 2024  \hfill 2024.12
+\item \emph{Certificate of Merit}, University of Information Technology Youth Union \hfill 2024.12 
+\item \emph{Certificate of Recognition}, Faculty of Computer Science Youth Union \hfill 2024.11  
 \item \emph{Certificate of Appreciation}, Binh Thuan Provincial Youth Union \hfill 2024.07
-\item \emph{Merit-Based Scholarship}, University of Information Technology \hfill 2024.04
+\item \emph{Merit-Based Scholarship}, University of Information Technology \hfill 2024.03
 \item \emph{Most Favourite Startup Project}, UIT Creative Startup Ideas Hackathon \hfill 2023.12
-\item \emph{Second Prize}, UIT Excellent Programs Team Building Competition \hfill 2023.10
 \awardListEnd
 }
 
+
 % -------------------- SKILLS --------------------
 \sectionBlock{
+\vspace{-9.5pt}
 \section{Skills}
 }{
 \skillListStart
 \justifying
-\item \emph{Languages}: Vietnamese (native), English (IELTS Score of 6.0).
-\item \emph{Programming}: Python, C++, Java, JavaScript, Bash.
-\item \emph{Technologies}: Flask, Django, FastAPI, ReactJS, PostgreSQL.
-\item \emph{Tools}: Github, Adobe Illustrator, Adobe Photoshop, Adobe Premiere Pro.
-\item \emph{Others}: Designing, Information Lookup, AI Prompting, Problem Solving, Leadership.
+\item \emph{Languages}: Comfortable using English in both speaking and writing (IELTS 6.0, 2023).
+\item \emph{Tech Stack}: Java (Spring Boot), Python (FastAPI, Flask, Django), C++, PostgreSQL, Docker.
+\item \emph{Tools}: Git/GitHub, Postman, Adobe Creative Suite, Microsoft Office, JetBrains IDEs.
+\item \emph{Operating Systems}: Windows, macOS, Ubuntu (Desktop and Server).
+\item \emph{Soft Skills}: Public Speaking, Risk Management, Mentorship.
+\item \emph{Others}: Graphic Design, Content Creation, Computer Repair \& Troubleshooting.
 \skillListEnd
 }
+
 
 \end{document}
